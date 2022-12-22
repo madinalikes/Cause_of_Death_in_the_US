@@ -138,8 +138,8 @@ Expected_Deaths FLOAT
 
 Created views to see see only specific rows or columns of a table.
 
-	```
-
+```
+{
 Select cd.year,
    cd.population,
    cd.sex,
@@ -149,6 +149,7 @@ From census_db cd
   Join death_causes dc ON cd.year = dc.year
   Where sex='male';
 
+}
 ```
 
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/111404552/209091313-f7a07233-b82d-4965-8199-5d339e977200.png">
