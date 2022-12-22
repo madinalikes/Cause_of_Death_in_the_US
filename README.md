@@ -109,7 +109,7 @@ PG admin in Postgres to store our data.
 
 
 ```
-{
+
   CREATE TABLE census_db(
 id serial Primary Key,
 Population FLOAT,
@@ -131,5 +131,5 @@ Observed_Deaths FLOAT,
 Expected_Deaths FLOAT
 );
 
-}
+
 ```
