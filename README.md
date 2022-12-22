@@ -28,6 +28,9 @@ The CSV File was found on data.gov: NCHS - Potentially Excess Deaths from the Fi
 Leading Causes of Death.csv (Renamed as NCHS_Causes_of_Death_2005-2015.csv 
 in our dataset).
 
+<img width="936" alt="Screenshot_20221221_112149" src="https://user-images.githubusercontent.com/111404552/209081706-025eca3e-c1ec-499e-a030-cfe3553f9838.png">
+
+
 Website/Source
 https://catalog.data.gov/dataset?
 q=Leading+Causes+of+Death+in+the+USA&sort=score+desc%2C+name+asc
@@ -62,7 +65,7 @@ The data were cleaned using the following
 
 7. Deleted NAN values
 
-8. dropped rows from Puerto Rico because we are only focusing on 50 States.
+8. Dropped rows from Puerto Rico because we are only focusing on 50 States.
 
 Renamed the original CSV file from NCHS - Potentially Excess Deaths from the Five 
 Leading Causes of Death.csv to NCHS_Causes_of_Death_2005-2015.csv. The 
@@ -103,14 +106,13 @@ database.
 <img width="369" alt="erd_diagram" src="https://user-images.githubusercontent.com/111404552/209063656-bd02f2d4-d818-44fa-8275-91138e44bb23.png">
 
 
-The cleaned data was then transferred into a Database. We created tables in our 
-database to match with our Panda’s DataFrame in the Jupyter notebook. We used 
-PG admin in Postgres to store our data.
+The cleaned data was then transferred into a Database. We create census_db and death_causes tables in our 
+database to match with our Panda’s DataFrame in the Jupyter notebook. We used PG admin in Postgres to store our data.
 
 
 ```
 
- CREATE TABLE census_db(
+CREATE TABLE census_db(
 id serial Primary Key,
 Population FLOAT,
 Hispanic TEXT,
@@ -133,5 +135,7 @@ Expected_Deaths FLOAT
 
 
 ```
+
+
 
 
