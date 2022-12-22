@@ -108,7 +108,9 @@ database to match with our Panda’s DataFrame in the Jupyter notebook. We used
 PG admin in Postgres to store our data.
 
 
-`CREATE TABLE census_db(
+```
+{
+  CREATE TABLE census_db(
 id serial Primary Key,
 Population FLOAT,
 Hispanic TEXT,
@@ -127,4 +129,7 @@ Locality TEXT,
 Age_Range INTEGER,
 Observed_Deaths FLOAT,
 Expected_Deaths FLOAT
-);`
+);
+
+}
+```
