@@ -1,7 +1,7 @@
 # **Cause of Death in the USA**  
 ---
 
-Rahma Ali, Madina Zhaksylyk
+*Rahma Ali, Madina Zhaksylyk*
 
 ## **Project Description**
 
