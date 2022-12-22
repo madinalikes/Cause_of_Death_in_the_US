@@ -110,7 +110,7 @@ PG admin in Postgres to store our data.
 
 ```
 
-  CREATE TABLE census_db(
+ CREATE TABLE census_db(
 id serial Primary Key,
 Population FLOAT,
 Hispanic TEXT,
