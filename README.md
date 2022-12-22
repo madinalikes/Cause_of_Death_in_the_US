@@ -1,9 +1,9 @@
-**# Cause of Death in the USA**  
+# **Cause of Death in the USA**  
 ---
 
 Rahma Ali, Madina Zhaksylyk
 
-## Project Description
+## **Project Description**
 
 Our project will be based on causes of death in the United States from Cancer, 
 Chronic Lower Respiratory Disease, Heart Disease, Stroke, and Unintentional Injury 
@@ -17,7 +17,7 @@ deaths?
 3. Which age group, sex, race, and fixed benchmarks have more death 
 rate?
 
-**# Extracting data** 
+# **Extracting data** 
 ---
 
 The data were extracted from the following sources:
@@ -41,7 +41,7 @@ Website/Source
 popest.Vintage_2015.html#list-tab-2014455046
 api.census.gov/data/2015/pep/charagegroups
 
-**# Transformation**
+# **Transformation**
 ---
 
 Data collected from the public source were not published in the exact way we wanted. 
@@ -94,7 +94,7 @@ death in this category than any other age range. We read both CSV files and API 
 using pandas into Jupiter notebook. 
 We merged both the CSV File and API call using Inner joint on Year.
 
-**# Loading Data**
+# **Loading Data**
 ---
 
 After transformation, ERD was created before loading data to the PostgreSQL 
