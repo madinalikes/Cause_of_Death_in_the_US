@@ -1,4 +1,5 @@
-# Cause of Death in the USA   
+**# Cause of Death in the USA**  
+---
 
 Rahma Ali, Madina Zhaksylyk
 
@@ -16,7 +17,8 @@ deaths?
 3. Which age group, sex, race, and fixed benchmarks have more death 
 rate?
 
-# Extracting data 
+**# Extracting data** 
+---
 
 The data were extracted from the following sources:
 
@@ -39,7 +41,8 @@ Website/Source
 popest.Vintage_2015.html#list-tab-2014455046
 api.census.gov/data/2015/pep/charagegroups
 
-# Transformation
+**# Transformation**
+---
 
 Data collected from the public source were not published in the exact way we wanted. 
 Therefore, we had to clean the data to meet our needs.
@@ -91,12 +94,37 @@ death in this category than any other age range. We read both CSV files and API 
 using pandas into Jupiter notebook. 
 We merged both the CSV File and API call using Inner joint on Year.
 
-# Loading Data
+**# Loading Data**
+---
 
 After transformation, ERD was created before loading data to the PostgreSQL 
 database.
+
+<img width="369" alt="erd_diagram" src="https://user-images.githubusercontent.com/111404552/209063656-bd02f2d4-d818-44fa-8275-91138e44bb23.png">
 
 
 The cleaned data was then transferred into a Database. We created tables in our 
 database to match with our Panda’s DataFrame in the Jupyter notebook. We used 
 PG admin in Postgres to store our data.
+
+
+`CREATE TABLE census_db(
+id serial Primary Key,
+Population FLOAT,
+Hispanic TEXT,
+Race TEXT,
+Sex TEXT,
+Year INTEGER,	
+State TEXT
+);
+
+CREATE TABLE death_causes(
+id serial Primary Key,
+Year INTEGER,
+Cause_of_Death TEXT,
+Benchmark INTEGER,
+Locality TEXT,
+Age_Range INTEGER,
+Observed_Deaths FLOAT,
+Expected_Deaths FLOAT
+);`
