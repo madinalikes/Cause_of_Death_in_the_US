@@ -2,7 +2,7 @@
 
 Rahma Ali, Madina Zhaksylyk
 
-# Project Description
+## Project Description
 
 Our project will be based on causes of death in the United States from Cancer, 
 Chronic Lower Respiratory Disease, Heart Disease, Stroke, and Unintentional Injury 
